@@ -1,0 +1,28 @@
+@use '../utils/variables' as *;
+@use '../base/topography' as *;
+
+.newsfeed {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    'topstory topstory new'
+    'topstory topstory new'
+    'more more more';
+  gap: 2rem;
+
+  padding: 2em 1em;
+}
+
+.top-story-wrapper {
+  grid-area: topstory;
+}
+
+.new-wrapper {
+  grid-area: new;
+
+  background-color: $neutral-very-dark-blue;
+}
+
+.more-wrapper {
+  grid-area: more;
+}

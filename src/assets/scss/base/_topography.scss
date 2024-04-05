@@ -1,0 +1,93 @@
+@use '../utils/variables' as *;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+@mixin font-heading1-bold {
+  font-family: $ff-inter;
+  font-style: normal;
+  font-weight: $fw-800;
+  font-size: $fs-heading1;
+  font-feature-settings: 'ss12' on, 'ss08' on, 'ss14' on, 'ss15' on, 'ss18' on,
+    'ss19' on;
+  text-transform: uppercase;
+
+  color: $neutral-very-dark-blue;
+}
+
+@mixin font-heading2-bold {
+  font-family: $ff-inter;
+  font-style: normal;
+  font-weight: $fw-800;
+  font-size: $fs-heading2;
+  font-feature-settings: 'ss12' on, 'ss08' on, 'ss14' on, 'ss15' on, 'ss18' on,
+    'ss19' on;
+
+  color: $neutral-very-dark-blue;
+}
+
+@mixin font-heading2-medium {
+  font-family: $ff-inter;
+  font-style: normal;
+  font-weight: $fw-700;
+  font-size: $fs-heading2;
+  font-feature-settings: 'ss12' on, 'ss08' on, 'ss14' on, 'ss15' on, 'ss18' on,
+    'ss19' on;
+
+  color: $primary-soft-orange;
+}
+
+@mixin font-heading3-medium {
+  font-family: $ff-inter;
+  font-style: normal;
+  font-weight: $fw-700;
+  font-size: $fs-heading3;
+  font-feature-settings: 'ss12' on, 'ss08' on, 'ss14' on, 'ss15' on, 'ss18' on,
+    'ss19' on;
+
+  color: $neutral-off-white;
+
+  a {
+    color: $neutral-off-white;
+    text-decoration: none;
+
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+      color: $primary-soft-orange;
+    }
+  }
+}
+
+@mixin font-nav-regular {
+  font-family: $ff-inter;
+  font-style: normal;
+  font-weight: $fw-400;
+  font-size: $fs-li;
+  font-feature-settings: 'ss12' on, 'ss08' on, 'ss14' on, 'ss15' on, 'ss18' on,
+    'ss19' on;
+  text-transform: capitalize;
+
+  color: $neutral-dark-grayish-blue;
+
+  a {
+    color: $neutral-dark-grayish-blue;
+    text-decoration: none;
+
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+      color: $primary-soft-red;
+    }
+  }
+}
+
+@mixin font-paragraph-regular {
+  font-family: $ff-inter;
+  font-style: normal;
+  font-weight: $fw-400;
+  font-size: $fs-paragraph;
+  font-feature-settings: 'ss12' on, 'ss08' on, 'ss14' on, 'ss15' on, 'ss18' on,
+    'ss19' on;
+
+  color: $neutral-dark-grayish-blue;
+}

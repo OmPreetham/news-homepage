@@ -1,0 +1,20 @@
+@use '../utils/variables' as *;
+@use '../base/topography' as *;
+
+.nav {
+  display: flex;
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    padding-left: 0;
+
+    list-style-type: none;
+
+    &__item {
+      @include font-nav-regular;
+    }
+  }
+}

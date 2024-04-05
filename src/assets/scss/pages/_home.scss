@@ -1,0 +1,19 @@
+@use '../utils/variables' as *;
+
+html {
+  font-family: $ff-inter;
+  font-size: 1rem;
+}
+
+body {
+  max-width: $max-width-desktop;
+  min-width: $min-width-mobile;
+
+  min-height: $min-height-screen;
+
+  margin-inline: auto;
+}
+
+#root {
+  padding: clamp(1rem, 1rem + 1vw, 6rem);
+}

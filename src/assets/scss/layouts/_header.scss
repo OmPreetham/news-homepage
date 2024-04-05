@@ -1,0 +1,15 @@
+@use '../utils/variables' as *;
+@use '../base/topography' as *;
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 1em;
+
+  h1 {
+    @include font-heading1-bold;
+    display: none;
+  }
+}

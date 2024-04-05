@@ -1,0 +1,23 @@
+@use '../utils/variables' as *;
+
+@mixin button() {
+  border: none;
+
+  padding: 1em;
+
+  background-color: $primary-soft-red;
+
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: $neutral-off-white;
+
+  cursor: pointer;
+
+  transition: background-color 0.3s ease-in-out, scale 0.3s ease-in-out;
+
+  &:focus,
+  &:hover {
+    scale: 1.05;
+    background-color: $neutral-very-dark-blue;
+  }
+}

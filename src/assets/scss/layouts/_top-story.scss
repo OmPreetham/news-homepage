@@ -1,0 +1,46 @@
+@use '../utils/variables' as *;
+@use '../base/topography' as *;
+@use '../components/button' as *;
+
+.top-story {
+  &__article {
+    height: 100%;
+
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    gap: 2rem;
+
+    &__image {
+      height: 100%;
+
+      object-fit: cover;
+      object-position: center center;
+    }
+
+    &__content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+
+    &__heading {
+      @include font-heading2-bold;
+    }
+
+    &__description {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    &__summary {
+      @include font-paragraph-regular;
+    }
+
+    &__read-more {
+      width: 12rem;
+
+      @include button;
+    }
+  }
+}
