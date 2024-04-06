@@ -4,6 +4,7 @@
 .newsfeed {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-flow: column;
   grid-template-areas:
     'topstory topstory new'
     'topstory topstory new'
