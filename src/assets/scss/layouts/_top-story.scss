@@ -9,7 +9,7 @@
 
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: $gap-normal;
 
     &__image-wrapper {
       height: 100%;
@@ -32,7 +32,7 @@
     &__content {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 2rem;
+      gap: $gap-normal;
     }
 
     &__heading {
@@ -42,7 +42,7 @@
     &__description {
       display: flex;
       flex-direction: column;
-      gap: 2rem;
+      gap: $gap-normal;
     }
 
     &__summary {

@@ -26,7 +26,7 @@ $fs-heading2: 2.5rem;
 $fs-heading3: 1.5rem;
 $fs-paragraph: 0.9rem;
 $fs-number: 3rem;
-$fs-nav-desktop: 0.9rem;
+$fs-nav-desktop: 1.3rem;
 $fs-nav-mobile: 1.3rem;
 
 // Font Weights
@@ -48,4 +48,9 @@ $min-width-mobile: 375px;
 
 // Heights
 
-$min-height-screen: 100vh;
+$min-height-screen: 100dvh;
+
+// Gaps
+
+$gap-base: 1rem;
+$gap-normal: 2rem;
