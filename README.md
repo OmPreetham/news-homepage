@@ -8,9 +8,17 @@ Desktop
 
 ![Desktop Preview](/public/preview-desktop.png)
 
+![Desktop Preview Hover Button](/public/preview-desktop-hover-button.png)
+
+![Desktop Preview Hover Image](/public/preview-desktop-hover-image.png)
+
+![Desktop Preview Hover New](/public/preview-desktop-hover-new.png)
+
 Mobile
 
 ![Mobile Preview](/public/preview-mobile.png)
+
+![Mobile Preview Nav](/public/preview-mobile-nav.png)
 
 ## Getting Started
 
