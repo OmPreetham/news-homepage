@@ -1,6 +1,7 @@
 @use '../utils/variables' as *;
 @use '../base/topography' as *;
 @use '../components/button' as *;
+@use '../utils/mixins' as *;
 
 .top-story {
   &__article {
@@ -10,11 +11,17 @@
     grid-template-rows: 2fr 1fr;
     gap: 2rem;
 
+    &__image__picture {
+      height: 100%;
+    }
+
     &__image {
       height: 100%;
 
       object-fit: cover;
       object-position: center center;
+
+      @include image-zoom;
     }
 
     &__content {
@@ -41,6 +48,17 @@
       width: 12rem;
 
       @include button;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .top-story {
+    &__article {
+      grid-template-rows: 1fr 1fr;
+      &__content {
+        grid-template-columns: 1fr;
+      }
     }
   }
 }

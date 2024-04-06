@@ -15,5 +15,11 @@ body {
 }
 
 #root {
-  padding: clamp(1rem, 1rem + 1vw, 6rem);
+  padding: 2rem;
+}
+
+@media screen and (max-width: 800px) {
+  #root {
+    padding: 1rem;
+  }
 }

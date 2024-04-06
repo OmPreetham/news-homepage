@@ -58,11 +58,33 @@
   }
 }
 
+@mixin font-heading3-dark {
+  font-family: $ff-inter;
+  font-style: normal;
+  font-weight: $fw-700;
+  font-size: $fs-heading3;
+  font-feature-settings: 'ss12' on, 'ss08' on, 'ss14' on, 'ss15' on, 'ss18' on,
+    'ss19' on;
+
+  color: $neutral-very-dark-blue;
+
+  a {
+    color: $neutral-very-dark-blue;
+    text-decoration: none;
+
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+      color: $primary-soft-orange;
+    }
+  }
+}
+
 @mixin font-nav-regular {
   font-family: $ff-inter;
   font-style: normal;
   font-weight: $fw-400;
-  font-size: $fs-li;
+  font-size: $fs-nav;
   font-feature-settings: 'ss12' on, 'ss08' on, 'ss14' on, 'ss15' on, 'ss18' on,
     'ss19' on;
   text-transform: capitalize;
@@ -90,4 +112,15 @@
     'ss19' on;
 
   color: $neutral-dark-grayish-blue;
+}
+
+@mixin font-number-bold {
+  font-family: $ff-inter;
+  font-style: normal;
+  font-weight: $fw-800;
+  font-size: $fs-number;
+  font-feature-settings: 'ss12' on, 'ss08' on, 'ss14' on, 'ss15' on, 'ss18' on,
+    'ss19' on;
+
+  color: $neutral-grayish-blue;
 }

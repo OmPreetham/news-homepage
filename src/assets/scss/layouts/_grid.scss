@@ -26,3 +26,13 @@
 .more-wrapper {
   grid-area: more;
 }
+
+@media screen and (max-width: 800px) {
+  .newsfeed {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'topstory'
+      'new'
+      'more';
+  }
+}

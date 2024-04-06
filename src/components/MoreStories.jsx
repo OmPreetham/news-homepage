@@ -5,7 +5,11 @@ const MoreStories = () => {
         <li className="more__list__item">
           <article className="more__article">
             <div className="more__article__image-wrapper">
-              <img className="more__article__image" src="/images/" alt="" />
+              <img
+                className="more__article__image"
+                src="/images/image-retro-pcs.jpg"
+                alt="Retro PCs"
+              />
             </div>
             <div className="more__article__content">
               <p className="more__article__number">01</p>
@@ -23,7 +27,11 @@ const MoreStories = () => {
         <li className="more__list__item">
           <article className="more__article">
             <div className="more__article__image-wrapper">
-              <img className="more__article__image" src="/images/" alt="" />
+              <img
+                className="more__article__image"
+                src="/images/image-top-laptops.jpg"
+                alt="Keyboard"
+              />
             </div>
             <div className="more__article__content">
               <p className="more__article__number">02</p>
@@ -41,10 +49,14 @@ const MoreStories = () => {
         <li className="more__list__item">
           <article className="more__article">
             <div className="more__article__image-wrapper">
-              <img className="more__article__image" src="/images/" alt="" />
+              <img
+                className="more__article__image"
+                src="/images/image-gaming-growth.jpg"
+                alt="Playstation Controller"
+              />
             </div>
             <div className="more__article__content">
-              <p className="more__article__number">02</p>
+              <p className="more__article__number">03</p>
               <h3 className="more__article__heading">
                 <a className="more__article__link" href="#">
                   The Growth of Gaming

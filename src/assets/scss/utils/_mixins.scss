@@ -1,0 +1,9 @@
+@use '../utils/variables' as *;
+
+@mixin image-zoom() {
+  transition: scale 0.3s ease-in-out;
+
+  &:hover {
+    scale: 1.05;
+  }
+}
