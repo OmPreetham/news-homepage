@@ -80,11 +80,11 @@
   }
 }
 
-@mixin font-nav-regular {
+@mixin font-nav-desktop {
   font-family: $ff-inter;
   font-style: normal;
   font-weight: $fw-400;
-  font-size: $fs-nav;
+  font-size: $fs-nav-desktop;
   font-feature-settings: 'ss12' on, 'ss08' on, 'ss14' on, 'ss15' on, 'ss18' on,
     'ss19' on;
   text-transform: capitalize;
@@ -93,6 +93,29 @@
 
   a {
     color: $neutral-dark-grayish-blue;
+    text-decoration: none;
+
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+      color: $primary-soft-red;
+    }
+  }
+}
+
+@mixin font-nav-mobile {
+  font-family: $ff-inter;
+  font-style: normal;
+  font-weight: $fw-400;
+  font-size: $fs-nav-mobile;
+  font-feature-settings: 'ss12' on, 'ss08' on, 'ss14' on, 'ss15' on, 'ss18' on,
+    'ss19' on;
+  text-transform: capitalize;
+
+  color: $neutral-dark-grayish-blue;
+
+  a {
+    color: $neutral-very-dark-blue;
     text-decoration: none;
 
     transition: color 0.3s ease-in-out;

@@ -4,6 +4,10 @@
 .nav {
   display: flex;
 
+  &__menu {
+    display: none;
+  }
+
   &__list {
     display: flex;
     align-items: center;
@@ -14,7 +18,64 @@
     list-style-type: none;
 
     &__item {
-      @include font-nav-regular;
+      @include font-nav-desktop;
+    }
+  }
+
+  &__mobile {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: start;
+
+    background-color: $neutral-nav-mobile-background;
+  }
+
+  &__list__mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 2rem;
+
+    padding-left: 0;
+
+    list-style-type: none;
+
+    .nav__list__item {
+      @include font-nav-mobile;
+    }
+
+    margin-left: auto;
+
+    min-height: 100vh;
+
+    background-color: $neutral-off-white;
+
+    width: 60%;
+
+    padding-block: 10rem;
+    padding-inline: 2rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .nav {
+    &__menu {
+      display: block;
+      cursor: pointer;
+      position: fixed;
+      right: 2rem;
+
+      z-index: 1;
+    }
+
+    &__list {
+      display: none;
     }
   }
 }
