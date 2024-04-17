@@ -28,7 +28,7 @@ const Navigation = () => {
         <img
           onClick={toggleNavigation}
           className="nav__menu__icon"
-          src={`/images/icon-menu${isOpen ? '-close' : ''}.svg`}
+          src={`images/icon-menu${isOpen ? '-close' : ''}.svg`}
           alt="Menu Icon"
         />
       </div>

@@ -7,7 +7,7 @@ const MoreStories = () => {
             <div className="more__article__image-wrapper">
               <img
                 className="more__article__image"
-                src="/images/image-retro-pcs.jpg"
+                src="images/image-retro-pcs.jpg"
                 alt="Retro PCs"
               />
             </div>
@@ -29,7 +29,7 @@ const MoreStories = () => {
             <div className="more__article__image-wrapper">
               <img
                 className="more__article__image"
-                src="/images/image-top-laptops.jpg"
+                src="images/image-top-laptops.jpg"
                 alt="Keyboard"
               />
             </div>
@@ -51,7 +51,7 @@ const MoreStories = () => {
             <div className="more__article__image-wrapper">
               <img
                 className="more__article__image"
-                src="/images/image-gaming-growth.jpg"
+                src="images/image-gaming-growth.jpg"
                 alt="Playstation Controller"
               />
             </div>
